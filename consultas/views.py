@@ -8,5 +8,11 @@ def index(request):
 def consultaticket(request):
     return render(request,'consultaticket.html')
 
-def consultaDeCredito(request):
+def consultadecredito(request):
     return render(request,'consultadecredito.html')
+
+def mostrarticket(request):
+    data ={
+        'user_name' : 'Arcelino'
+    }
+    return render(request,'mostrarticket.html',data)
